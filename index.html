@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+
+    <style>
+       
+         .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            
+            width: 100%;
+            height: 10%;
+          
+        }
+
+        .logo img {
+            width: 55px; 
+            height: 50px;
+            top: 20px;
+            right: 1000px
+        }
+        
+
+   
+        
+        .social-icons {
+            list-style: none style;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            top: 20px;
+            left: 1000px;
+            
+        }
+
+        .social-icons li {
+            display: inline-block;
+            margin-right: 25px; 
+           
+        }
+
+        .social-icons img {
+            width: 50px; 
+            height: 55px; 
+            transition: transform 0.3s ease;
+
+        }
+
+        .custom-hr{
+            width: 2390%;
+            height: 4px;
+            background-color: #ff000000;
+
+        }
+          .social-icons img:hover {   
+            transform: scale(1.5);
+                }
+
+
+
+
+
+
+
+
+
+
+
+         /* Center the table */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: auto;
+            place-items: center;
+        }
+
+        /* Style for the table */
+        table  {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 1000px;
+            border: 4px solid #000000;
+            display: table;
+           
+           
+            background-color: #ddd;
+            margin: 0 auto;
+            
+            
+        }
+
+
+        /* Style for table rows */
+        tr {
+            display: table-row;
+        }
+
+        /* Style for table cells */
+        td {
+            display: center;
+            overflow: hidden;
+            position: center;
+            max-height: 200px;
+            max-width: 500px;
+            padding: 10px;
+            border: 7px solid #000000;
+            vertical-align: middle;
+            text-align: center;
+            
+        }
+
+        .tablecenter{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .scrolling-content {
+            animation: scrollContent 20s linear infinite; /* Adjust duration as needed */
+            white-space: nowrap;
+            position: absolute; /* Position the content absolutely */
+            top: 0; /* Start from the top of the cell */
+            left: 0; /* Start from the left of the cell */
+        }
+
+        @keyframes scrollContent {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: -100%; /* Scroll to the top */
+            }
+        } 
+        /* Style for the image container */
+        .image-container img {
+            height: 400px; /* Adjust the height as needed */
+            overflow-x: scroll; /* Enable vertical scrolling for images */
+           
+            width: 200px;
+            height: 150px;
+            
+        }
+
+        /* Style for the text container */
+        .text-container {
+            height: 400px; /* Adjust the height as needed */
+            overflow-x: scroll; /* Enable vertical scrolling for text */
+        }
+
+        /* Style for images */
+        img {
+            max-width: 100%; /* Ensure images fit within their container */
+            height: auto; /* Maintain aspect ratio */
+            width: 200px;
+            height: 150px;
+        }       
+        .image-scroll {
+            animation: scrollImages 10s linear infinite; /* Adjust duration as needed */
+            white-space: nowrap;
+        }
+
+        @keyframes scrollImages {
+            0% {
+                transform: translatey(-100%);
+            }
+            100% {
+                transform: translatey(100%);
+            }
+        }
+        .vertical-image{
+            transform: rotate(-10deg);
+            margin: auto;
+            display: block;
+        }
+
+        .scrolling-text {
+            animation: scrollText 10s linear infinite; /* Adjust duration as needed */
+            position: absolute; /* Position the text absolutely */
+            top: 0; /* Start from the top of the cell */
+            left: 0; /* Start from the left of the cell */
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+
+        @keyframes scrollText {
+            0% {
+                top: 0;
+            }
+            100% {
+                top: -100%; /* Scroll to the top */
+            }
+        }
+    </style>
+    
+    
+</head>
+<body background="bg.jpg" style ="background-repeat:no-repeat;background-size: 100% ">
+   
+    <div class="header">
+        <div class="logo">
+            <img src="logo.png" alt="logo">
+
+  
+    <ul class="social-icons">
+        <li><a href="home.html" target="_blank"><img src="Home-icon.png" alt="HOME"></a></li>
+        <li><a href="about.html"target="_blank" ><img src="about-us-icon.png" alt="ABOUT US"></a></li>
+        <li><a href="https://www.youtube.com/channel/UChBD71K0U_CsFCIDJKTrL6Q"><img src="youtube-icon.png" alt="YOUTUBE"></a></li>
+        <li><a href="contact.html"target="_blank" ><img src="contact-icon.png" alt="CONTACT"></a></li>
+       
+    </ul>
+     <hr class="custom-hr">
+
+     <table>
+        <tr>
+            <!-- Image container -->
+            <td class="image-container">
+                <div class="image-scroll">
+                <div class="scrolling.content">
+
+                <img class="vertical-image" src="image5.jpg" alt="vrtical image">
+                <img class="vertical-image" src="image3.jpg" alt="vrtical image">
+                <img class="vertical-image" src="image4.jpg" alt="vrtical image">
+            </div>
+              </div>
+            </td>
+            
+            <!-- Text container -->
+            <td class="text-container">
+                <div class="scrolling.content">
+                    <div class="text-content">
+                <p>Hello, I am Kishlay Pratik, <p>
+                     <p>a student currently studying in Class 10 B </p>
+                        <p> at Kendriya Vidyalaya. I hail from the vibrant city of Patna.</p>
+                        <p> I have a deep passion for exploration and </p>
+                        <p>love discovering new things. Coding and solving puzzles</p>
+                            <p> are not just hobbies for me; they're a part of my identity.</p>
+                            <p> I take great pleasure in unraveling complex problems and</p>
+                              <p> creating solutions. Currently, I'm working on an exciting </p>
+                              <p> project that I'm eager to share with you. </p>
+            </div>
+            </div>
+            </td>
+        </tr>
+        </table>
+
+     
+</body>
+</html>
